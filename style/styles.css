@@ -1,5 +1,7 @@
 :root {
   --primary-color: #fb0091;
+  --heading-font: "Poppins", sans-serif;
+  --paragraph-font: "Open Sans", sans-serif;
 }
 
 div.hero {
@@ -9,6 +11,11 @@ div.hero {
     rgba(221, 221, 221, 0.15) 100.7%
   );
   padding: 150px;
+}
+
+.hero h1,
+.hero h2 {
+  font-family: var(--heading-font);
 }
 
 .hero h1 {
@@ -33,10 +40,15 @@ div.hero {
   margin-top: 30px;
   background: var(--primary-color);
   border: var(--primary-color);
+  font-family: var(--paragraph-font);
   font-size: 18px;
 }
 
 .hero button.btn:hover {
   background: var(--primary-color);
   opacity: 0.8;
+}
+
+div.body-content {
+  background: #fafafa;
 }
