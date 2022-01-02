@@ -45,10 +45,12 @@ button.btn {
   margin-top: 30px;
   background: var(--primary-color);
   border: var(--primary-color);
+  color: var(--font-color);
 }
 
 button.btn:hover {
   background: var(--primary-color);
+  color: var(--font-color);
   opacity: 0.8;
 }
 
