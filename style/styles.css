@@ -9,18 +9,23 @@ h3 {
   font-family: "Poppins", sans-serif;
 }
 
-p,
-.hero button.btn {
-  font-family: "Open Sans", sans-serif;
-}
-
+footer,
 div.second-paragraph,
 div.third-paragraph {
   margin-top: 75px;
 }
 
-p {
+p,
+.hero button.btn {
+  font-family: "Open Sans", sans-serif;
+}
+
+p,
+button.btn {
   font-size: 18px;
+}
+
+p {
   line-height: 1.5;
   opacity: 0.8;
 }
@@ -40,16 +45,11 @@ button.btn {
   margin-top: 30px;
   background: var(--primary-color);
   border: var(--primary-color);
-  font-size: 18px;
 }
 
 button.btn:hover {
   background: var(--primary-color);
   opacity: 0.8;
-}
-
-footer {
-  margin-top: 75px;
 }
 
 div.hero {
@@ -87,7 +87,7 @@ div.body-content {
 
 div.footer {
   background: #faf4f8;
-  padding: 100px;
+  padding: 50px 50px 25px;
 }
 
 .footer a {
