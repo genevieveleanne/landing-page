@@ -1,12 +1,14 @@
 :root {
   --primary-color: #fb0091;
   --font-color: #fefefe;
-  --gradient: radial-gradient(
-    329px at 3.1% 9.3%,
-    rgb(251, 204, 235) 28.1%,
-    rgba(221, 221, 221, 0.15) 100.7%
-  );
   --background: #faf4f8;
+}
+
+p,
+ul,
+button.btn,
+.subscribe-btn {
+  font-family: "Open Sans", sans-serif;
 }
 
 h1,
@@ -21,20 +23,16 @@ div.sign-up {
   padding: 100px;
 }
 
-div.main-content,
-div.sign-up {
-  background: #fafafa;
-}
-
 p,
-ul,
-button.btn {
-  font-family: "Open Sans", sans-serif;
-}
-
-p,
-button.btn {
+button.btn,
+.subscribe-btn {
   font-size: 18px;
+}
+
+div.main-content,
+div.sign-up,
+div.footer {
+  background: #fafafa;
 }
 
 .main-content h2,
@@ -42,9 +40,51 @@ button.btn {
   margin-bottom: 40px;
 }
 
+p,
+li {
+  opacity: 0.8;
+}
+
+nav {
+  background: radial-gradient(
+    329px at 3.1% 9.3%,
+    rgb(251, 204, 235) 28.1%,
+    rgba(221, 221, 221, 0.15) 100.7%
+  );
+}
+
 p {
   line-height: 1.5;
-  opacity: 0.8;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin: 20px;
+}
+
+li {
+  font-size: 17px;
+  line-height: 30px;
+}
+
+li:hover {
+  text-decoration: underline;
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+nav i {
+  background: var(--primary-color);
+  border-radius: 50px;
+  padding: 10px;
+  margin: 15px 10px;
+}
+
+nav li {
+  display: inline;
+  margin-left: 15px;
 }
 
 button.btn {
@@ -60,6 +100,10 @@ button.btn:hover {
   background: var(--primary-color);
   color: var(--font-color);
   opacity: 0.8;
+}
+
+li.active {
+  color: var(--primary-color);
 }
 
 div.hero {
@@ -95,22 +139,8 @@ div.more-content {
   color: var(--primary-color);
 }
 
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 20px;
-}
-
-li {
-  font-size: 17px;
-  line-height: 30px;
-  opacity: 0.8;
-}
-
-li:hover {
-  text-decoration: underline;
-  color: var(--primary-color);
-  cursor: pointer;
+div.footer {
+  padding: 10px;
 }
 
 .email {
@@ -130,15 +160,8 @@ li:hover {
   color: var(--font-color);
   border: none;
   border-radius: 7px;
-  font-size: 18px;
-  font-family: "Open Sans", sans-serif;
 }
 
 .subscribe-btn:hover {
   opacity: 0.8;
-}
-
-div.footer {
-  background: var(--gradient);
-  padding: 10px;
 }
