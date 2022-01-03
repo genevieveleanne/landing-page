@@ -4,6 +4,13 @@
   --background: #faf4f8;
 }
 
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
 p,
 ul,
 button.btn,
@@ -143,6 +150,10 @@ div.footer {
   padding: 10px;
 }
 
+.card {
+  margin: 10px;
+}
+
 .email {
   width: 35%;
   margin: 15px;
@@ -164,4 +175,18 @@ div.footer {
 
 .subscribe-btn:hover {
   opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  .header {
+    margin: 0 50px;
+  }
+
+  .header h1 {
+    font-size: 40px;
+  }
+
+  .header p {
+    font-size: 10px;
+  }
 }
