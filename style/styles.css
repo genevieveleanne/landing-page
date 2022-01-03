@@ -15,14 +15,20 @@ h3 {
   font-family: "Poppins", sans-serif;
 }
 
-footer,
-div.second-paragraph,
-div.third-paragraph {
-  margin-top: 75px;
+div.main-content,
+div.more-content,
+div.sign-up {
+  padding: 100px;
+}
+
+div.main-content,
+div.sign-up {
+  background: #fafafa;
 }
 
 p,
-.hero button.btn {
+ul,
+button.btn {
   font-family: "Open Sans", sans-serif;
 }
 
@@ -31,18 +37,14 @@ button.btn {
   font-size: 18px;
 }
 
+.main-content h2,
+.more-content h2 {
+  margin-bottom: 40px;
+}
+
 p {
   line-height: 1.5;
   opacity: 0.8;
-}
-
-a {
-  color: var(--font-color);
-  text-decoration: none;
-}
-
-a:hover {
-  color: var(--font-color);
 }
 
 button.btn {
@@ -81,27 +83,62 @@ div.hero {
   opacity: 0.7;
 }
 
-div.main-content {
-  background: #fafafa;
-}
-
-.main-content h3 {
-  font-size: 28px;
-}
-
 div.more-content {
   background: var(--background);
+}
+
+.more-content h2 {
+  margin: 10px;
+}
+
+.more-content p {
+  color: var(--primary-color);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px;
+}
+
+li {
+  font-size: 17px;
+  line-height: 30px;
+  opacity: 0.8;
+}
+
+li:hover {
+  text-decoration: underline;
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+.email {
+  width: 35%;
+  margin: 15px;
+  padding: 5px;
+  height: 10%;
+  border-radius: 4px;
+  border: 1px solid var(--primary-color);
+  font-size: 20px;
+}
+
+.subscribe-btn {
+  margin: 10px;
+  padding: 10px 12px;
+  background: var(--primary-color);
+  color: var(--font-color);
+  border: none;
+  border-radius: 7px;
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.subscribe-btn:hover {
+  opacity: 0.8;
 }
 
 div.footer {
   background: var(--gradient);
   padding: 10px;
-}
-
-.footer a {
-  color: var(--primary-color);
-}
-
-.footer a:hover {
-  text-decoration: underline;
 }
