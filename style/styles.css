@@ -81,17 +81,21 @@ div.hero {
   opacity: 0.7;
 }
 
-div.body-content {
+div.main-content {
   background: #fafafa;
 }
 
-.body-content h3 {
+.main-content h3 {
   font-size: 28px;
 }
 
-div.footer {
+div.more-content {
   background: var(--background);
-  padding: 50px 50px 25px;
+}
+
+div.footer {
+  background: var(--gradient);
+  padding: 10px;
 }
 
 .footer a {
